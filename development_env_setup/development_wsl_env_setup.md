@@ -41,6 +41,7 @@ git config --global user.name "Name Lastname"
 git config --global user.email "yourmail@gmail.com"
 git config --list
 git clone https://myrepo.github.com
+git checkout yourbranch
 ```
 
 ## Step 4: How to manage the project folders within wsl
