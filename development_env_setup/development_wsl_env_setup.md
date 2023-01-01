@@ -45,7 +45,11 @@ git checkout yourbranch
 ```
 
 ## Step 4: How to manage the project folders within wsl
-To open the wsl folders using the windows explorer (in case you dont want to use the console), just enter: explorer.exe . in the wsl console, this will open a new Explorer already in the wsl folder from within the command was runned. 
+To open the wsl folders using the windows explorer (in case you dont want to use the console), just enter in the wsl console this command: 
+```
+explorer.exe . 
+````
+It will open a new Explorer already in the wsl folder from within the command was runned. 
 
 You can also use the command: \\wsl$\
 
