@@ -56,8 +56,52 @@ You can also use the command: \\wsl$\
 For more information you can check the following [link](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password).
 
 ## Step5: Install python and jupyter notebooks
-Run the following commands on the wsl console:
+Run the following commands on the wsl console on your root user folder in WSL:
+Install dependencies to compile python source code:
 ```
-sudo apt install python3 python3-pip ipython3
-python3 -m pip3 install jupyter
+sudo apt-get install wget build-essential libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev liblzma-dev -y
+```
+Get the last python code (you can search the last version [here](https://www.python.org/downloads/source/))
+```
+wget https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tgz
+```
+Extract the file
+```
+tar xzf Python-3.9.6.tgz
+```
+Compile the code
+```
+cd Python-3.9.6 && ./configure --enable-optimizations
+```
+Install Python
+```
+sudo make altinstall
+```
+Check name of the python executable
+```
+ls /usr/local/bin/python*
+```
+Set new Python executable as default
+```
+sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.9 1
+```
+Install pip
+```
+python -m pip install --upgrade pip
+```
+Check pip executable
+```
+ls /usr/local/bin/pip*
+```
+Set new pip as default
+```
+sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.9 1
+```
+Check python and pip versions
+```
+python -V && pip -V
+```
+Install Jupyter
+```
+python -m pip install jupyter
 ```
