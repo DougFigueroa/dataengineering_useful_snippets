@@ -54,3 +54,10 @@ It will open a new Explorer already in the wsl folder from within the command wa
 You can also use the command: \\wsl$\
 
 For more information you can check the following [link](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password).
+
+## Step5: Install python and jupyter notebooks
+Run the following commands on the wsl console:
+```
+sudo apt install python3 python3-pip ipython3
+python3 -m pip3 install jupyter
+```
