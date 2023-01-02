@@ -48,14 +48,14 @@ git checkout yourbranch
 To open the wsl folders using the windows explorer (in case you dont want to use the console), just enter in the wsl console this command: 
 ```
 explorer.exe . 
-````
+```
 It will open a new Explorer already in the wsl folder from within the command was runned. 
 
 You can also use the command: \\wsl$\
 
 For more information you can check the following [link](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password).
 
-## Step5: Install python and jupyter notebooks
+## Step 5: Install python and jupyter notebooks
 Run the following commands on the wsl console on your root user folder in WSL:
 Install dependencies to compile python source code:
 ```
@@ -104,4 +104,14 @@ python -V && pip -V
 Install Jupyter
 ```
 python -m pip install jupyter
+```
+
+## Step 6: Create a python virtual env
+To avoid libraries conflicts, is recommended to install a python env, you can do it running this command:
+```
+python3 -m venv myenv
+```
+Activate virtual env (enter to the folder where the env was installed)
+```
+myenv/bin/activate 
 ```
