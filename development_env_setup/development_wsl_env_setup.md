@@ -109,9 +109,10 @@ python -m pip install jupyter
 ## Step 6: Create a python virtual env
 To avoid libraries conflicts, is recommended to install a python env, you can do it running this command:
 ```
-python3 -m venv myenv
+python -m pip install --user - U virtualenv
+python -m virtualenv myenv
 ```
 Activate virtual env (enter to the folder where the env was installed)
 ```
-myenv/bin/activate 
+source myenv/bin/activate 
 ```
