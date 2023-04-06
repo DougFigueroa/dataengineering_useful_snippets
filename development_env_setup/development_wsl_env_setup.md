@@ -116,3 +116,13 @@ Activate virtual env (enter to the folder where the env was installed)
 ```
 source myenv/bin/activate 
 ```
+
+## Step 7: Set an environment variable for easier access to your project folder
+Create the env variable:
+```
+export PROJECT_PATH="$HOME/folder/project"
+```
+Enter the project folder:
+```
+cd $PROJECT_PATH
+```
