@@ -126,3 +126,13 @@ Enter the project folder:
 ```
 cd $PROJECT_PATH
 ```
+
+## Step 8: OPTIONAL - Install any library that you may need
+If you want the basics for machine learning for example, install the following:
+```
+python -m pip install -U jupyter matplotlib numpy pandas scipy scikit-learn
+```
+If you create the virtual env of the Step 6, you need to register the env in Jupyter like this:
+```
+python -m ipykernel install --user --name=python
+```
