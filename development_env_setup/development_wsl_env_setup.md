@@ -27,7 +27,7 @@ For more information you can check the documentation [here](https://learn.micros
 
 ## Step 2: Connect Visual Studio Code to the WSL distro
 Click on the left bottom corner in Visual Studio Code, and in the prompt box select:
-*New WSL Window* then, select the distro installed.
+*New WSL Window* then, select the distro installed (all the wsl distros should appear here).
 
 ![VSCode_wsl](development_env_images/enter_wsl_vs.png)
 
