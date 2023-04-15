@@ -29,6 +29,8 @@ For more information you can check the documentation [here](https://learn.micros
 Click on the left bottom corner in Visual Studio Code, and in the prompt box select:
 *New WSL Window* then, select the distro installed.
 
+![VSCode_wsl](development_env_images/enter_wsl_vs.png)
+
 This will open a new window and the console will be in the WSL. So you can start developing and installing everything you need for Linux.
 
 ## Step 3: Install and set up Git in WSL
@@ -101,18 +103,16 @@ Check python and pip versions
 ```
 python -V && pip -V
 ```
-Install Jupyter
-```
-python -m pip install jupyter
-```
 
 ## Step 6: Create a python virtual env
 To avoid libraries conflicts, is recommended to install a python env, you can do it running this command:
 ```
-python -m pip install --user - U virtualenv
+python -m pip install --user virtualenv
 python -m virtualenv myenv
 ```
-Activate virtual env (enter to the folder where the env was installed)
+Here the env name is "myenv",
+
+Activate virtual env enter to the folder where the env was installed.
 ```
 source myenv/bin/activate 
 ```
