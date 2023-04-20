@@ -7,10 +7,11 @@
 def add(*numbers):
     total = 0
     for num in numbers:
-        total +- num
+        total += num
     return total
 
 # you can use it like this
+print('\n Testing args')
 print(add(2,1))
 print(add(2,3,45))
 print(add(1))
@@ -25,7 +26,7 @@ def count_tshirts(**tshirts):
     for t in tshirts.values():
         total += t
     return total
-
+print('\n Testing kargs')
 print(count_tshirts(black=1, orange=10))
 print(count_tshirts(black=10))
 print(count_tshirts(white=1, blue=3, red=1, yello=5))
